@@ -45,7 +45,7 @@
 }
 
 
-.title {
+.maintitle {
   position: absolute;
   top: 23%;
   left: 70px;
@@ -73,4 +73,15 @@
     background-color:var(--blue-button); 
     transform: scale(1.05); 
     color:white;
+}
+
+
+
+
+/* popular destinations */
+
+.title {
+    color: var(--dark-blue);
+    border-bottom: 2px solid black;
+    margin-top: 5px;
 }
