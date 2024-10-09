@@ -61,16 +61,63 @@
 
     <header class="background">
         <h1 class="maintitle">Откройте новые <br> горизонты вместе <br> с нами!</h1>
-        <button class="btn btn-blue">View tours</button>
+        <button class="btn btn-lightblue">Узнать подробнее</button>
     </header>
 
     <!-- popular tours -->
     <section>
         <div class="container">
             <h1 class="title">Популярные туры</h1>
-            
+            <div class="popular-destinations-wrapper">
+                <div class="popular-destinations mt-5" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                    <!-- Карточки туров -->
+                    <div class="">
+                        <div class="destination-card px-3">
+                            <img src="images/egypt.png" class="img-fluid">
+                            <div class="overlay">
+                                <div class="country">Египет - 100 USD</div>
+                                <button class="btn btn-blue">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="destination-card px-3">
+                            <img src="images/bali.png" class="img-fluid">
+                            <div class="overlay">
+                                <div class="country">Бали - 100 USD</div>
+                                <button class="btn btn-blue">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="destination-card px-3">
+                            <img src="images/turkey.png" class="img-fluid">
+                            <div class="overlay">
+                                <div class="country">Турция - 100 USD</div>
+                                <button class="btn btn-blue">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="destination-card px-3">
+                            <img src="images/dubai.png" class="img-fluid">
+                            <div class="overlay">
+                                <div class="country">Дубай - 100 USD</div>
+                                <button class="btn btn-blue">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Пагинатор под карточками -->
+                <div class="paginator mt-4 text-center">
+                    <button class="prev"><i class="bi bi-arrow-left-circle-fill fs-1"></i></button>
+                    <ul class="slick-dots"></ul>
+                    <button class="next"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
+                </div>
+            </div>
         </div>
     </section>
+
 
 
     <!-- about company -->

@@ -46,7 +46,7 @@
 
 
 .maintitle {
-  position: absolute;
+  position: relative;
   top: 23%;
   left: 70px;
   color: white;
@@ -55,13 +55,13 @@
   z-index: 2;
 }
 
-.background .btn-blue {
+.background .btn-lightblue {
     background-color: var(--blue-button);
     color: white;
     border: none;
     border-radius: 25px;
     top: 68%;
-    left: 70px;
+    left: 0px;
     /* padding: 5px 15px; */
     font-size: 18px;
     display: block;
@@ -69,7 +69,7 @@
     padding-right: 45px; 
 }
   
-.background .btn-blue:hover {
+.background .btn-lightblue:hover {
     background-color:var(--blue-button); 
     transform: scale(1.05); 
     color:white;
@@ -81,7 +81,84 @@
 /* popular destinations */
 
 .title {
-    color: var(--dark-blue);
-    border-bottom: 2px solid black;
-    margin-top: 5px;
+  color: var(--dark-blue);
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+  padding-bottom: 17px; 
+  display: inline-block;
+  ; 
+}
+
+
+
+/* popular destinations */
+
+.destination-card {
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+
+.destination-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  padding: 20px;
+  color: white;
+}
+
+.destination-card .country {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.destination-card .btn-blue {
+  background-color: var(--blue-button);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+}
+.destination-card .btn-blue:hover {
+  background-color:var(--blue-button); 
+  transform: scale(1.05); 
+  color:white;
+}
+
+
+
+
+/* paginator */
+.paginator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.paginator > button {
+  color: var(--blue-button);
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -85px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style:inside;
+  text-align: center;
 }
