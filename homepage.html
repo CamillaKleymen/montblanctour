@@ -29,7 +29,7 @@
                 <a class="navbar-brand ms-0" href="#">
                     <img src="images/logo.svg" class="img-fluid">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,10 +59,23 @@
 
     <!-- background -->
 
-    <header class="background">
+    <section class="background">
         <h1 class="maintitle">Откройте новые <br> горизонты вместе <br> с нами!</h1>
         <button class="btn btn-lightblue">Узнать подробнее</button>
-    </header>
+        <div class="paginator mt-4 text-center">
+            <!-- <button class="prev"><i class="bi bi-arrow-left-circle-fill fs-1"></i></button> -->
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <!-- <button class="next"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button> -->
+        </div>
+    </section>
 
     <!-- popular tours -->
     <section>
@@ -108,10 +121,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- Пагинатор под карточками -->
                 <div class="paginator mt-4 text-center">
                     <button class="prev"><i class="bi bi-arrow-left-circle-fill fs-1"></i></button>
-                    <ul class="slick-dots"></ul>
+                    <!-- <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div> -->
                     <button class="next"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
                 </div>
             </div>
@@ -126,18 +146,145 @@
             <h2 class="title">О компании</h2>
             <div class="row">
                 <div class="col-lg-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum eget at tellus. Morbi scelerisque feugiat urna. <br> Etiam aliquam fermentum sollicitudin. Integer nec vehicula felis, nec gravida lorem. Nam commodo, velit quis volutpat egestas, sapien lectus aliquam ex, at pretium sapien libero lobortis urna. Nulla malesuada pharetra laoreet. <br> Donec eu purus ante. Fusce accumsan et felis ut maximus. Donec volutpat nulla eu elementum aliquam. Quisque et velit sed nisl iaculis vulputate ut non nunc. <br> Quisque ac purus orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse rhoncus nulla mi, in gravida erat commodo a. <br> In a odio tortor. In vel magna a sapien lacinia vehicula sit amet eu ligula. Morbi ultricies lacus metus, sit amet dictum erat lacinia sed.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum
+                        eget at tellus. Morbi scelerisque feugiat urna. <br> Etiam aliquam fermentum sollicitudin.
+                        Integer nec vehicula felis, nec gravida lorem. Nam commodo, velit quis volutpat egestas, sapien
+                        lectus aliquam ex, at pretium sapien libero lobortis urna. Nulla malesuada pharetra laoreet.
+                        <br> Donec eu purus ante. Fusce accumsan et felis ut maximus. Donec volutpat nulla eu elementum
+                        aliquam. Quisque et velit sed nisl iaculis vulputate ut non nunc. <br> Quisque ac purus orci.
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Suspendisse rhoncus nulla mi, in gravida erat commodo a. <br> In a odio tortor. In vel magna a
+                        sapien lacinia vehicula sit amet eu ligula. Morbi ultricies lacus metus, sit amet dictum erat
+                        lacinia sed.
+                    </p>
                 </div>
                 <div class="col-lg-4">
                     <img src="images/aboutcompany.png" class="img-fluid">
                 </div>
             </div>
-            
+
         </div>
     </section>
-    <!-- news -->
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="title">Новости</h2>
+            <div class="news" data-slick='{"slidesToShow": 2.1, "slidesToScroll": 1, "dots": true}'>
+                <div class="news-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news1.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum eget at tellus. Morbi scelerisque feugiat urna. Etiam aliquam fermentum sollicitudin. Integer nec vehicula felis, nec gravida lorem.</p>
+                            <a href="#" class="read-more">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news2.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum eget at tellus. Morbi scelerisque feugiat urna. Etiam aliquam fermentum sollicitudin. Integer nec vehicula felis, nec gravida lorem.</p>
+                            <a href="#" class="read-more">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news1.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum eget at tellus. Morbi scelerisque feugiat urna. Etiam aliquam fermentum sollicitudin. Integer nec vehicula felis, nec gravida lorem.</p>
+                            <a href="#" class="read-more">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/news2.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit in leo commodo interdum eget at tellus. Morbi scelerisque feugiat urna. Etiam aliquam fermentum sollicitudin. Integer nec vehicula felis, nec gravida lorem.</p>
+                            <a href="#" class="read-more">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paginator mt-4 text-center">
+                <button class="prev"><i class="bi bi-arrow-left-circle-fill fs-1"></i></button>
+                <button class="next"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
+            </div>
+        </div>
+    </section>
 
     <!-- contact form -->
+    <section class="contactform">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="title-contacts">Контакты</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec vel elit in leo commodo interdum eget at tellus.</p>
+                    <p class="px-5">65765756756</p>
+                    <p class="px-5">email</p>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Ваша почта">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Напишите Ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lightblue">Узнать подробнее</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/logo.svg" alt="Mont Blanc Tour" class="img-fluid mb-4">
+                </div>
+                <div class="col-lg-3">
+                    <h5>Полезные ссылки</h5>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Туры</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Адрес:</h5>
+                    <p>Ташкент</p>
+                    <h5>Телефон:</h5>
+                    <p>+12345</p>
+                    <h5>Почта:</h5>
+                    <p>info@</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Социальные сети:</h5>
+                    <div>
+                        <a href="#" class="bi bi-telegram fs-3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- footer -->
 
