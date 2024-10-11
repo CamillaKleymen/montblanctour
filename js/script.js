@@ -99,3 +99,35 @@ $(document).ready(function() {
       $('.news').slick('slickNext');
   });
 });
+
+function toggleDropdown(event) {
+    event.preventDefault();
+    var dropdownMenu = this.nextElementSibling;
+    if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.style.display = "block";
+    }
+}
+
+function closeDropdowns(event) {
+    if (!event.target.matches('.dropdown-toggle')) {
+        var dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === "block") {
+                openDropdown.style.display = "none";
+            }
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', toggleDropdown);
+    });
+
+    // Закрытие выпадающего меню при клике вне его
+    window.addEventListener('click', closeDropdowns);
+});
