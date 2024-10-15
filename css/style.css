@@ -12,18 +12,23 @@
   color: var(--dark-blue);
 }
 
-/* background */
+/* tours overview */
 
+
+
+
+/* 
 .background {
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 50%;
   height: 80vh;
   position: relative;
   padding-bottom: 70px; 
   padding-top: 70px; 
+  left: 50%;
 }
 
 .background::before {
@@ -33,26 +38,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .background * {
   position: relative;
   z-index: 2;
-}
+/* }  */
 
 .maintitle {
-  position: relative;
-  margin-top: 8%;
-  margin-left: 150px;
-  color: white;
-  font-size: 64px;
-  font-weight: 500;
-  z-index: 2;
-}
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: var(--dark-blue);
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 22%;
+} 
 
-.background .btn-lightblue {
+.overview .btn-lightblue {
   background-color: var(--blue-button);
   color: white;
   border: none;
@@ -62,16 +65,16 @@
   padding: 10px 10px;
   font-size: 18px;
   display: block;
-  width: 17% !important;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 25% !important;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
-.background .btn-lightblue:hover {
+.overview .btn-lightblue:hover {
   background-color: var(--blue-button);
   transform: scale(1.05);
   color: white;
-}
+} */
 
 /* popular destinations */
 
