@@ -3,6 +3,9 @@
 :root {
   --dark-blue: #042835;
   --blue-button: #387faf;
+  --stars: #ffa800;
+  --background: #264A99;
+  --white: white;
 }
 
 /* header */
@@ -14,46 +17,24 @@
 
 /* tours overview */
 
-
-
-
-/* 
-.background {
-  background-image: url("../images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 80vh;
-  position: relative;
-  padding-bottom: 70px; 
-  padding-top: 70px; 
-  left: 50%;
-}
-
-.background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.img-tour-overview{
   width: 100%;
-  height: 100%;
-  z-index: 1;
+  clip-path: polygon(0 0, 0 80%, 50% 100%, 100% 70%, 100% 0);
 }
-
-.background * {
-  position: relative;
-  z-index: 2;
-/* }  */
-
+  
 .maintitle {
   margin-top: 2%;
   margin-bottom: 5%;
   color: var(--dark-blue);
   font-size: 70px;
   font-weight: bold;
-  margin-top: 22%;
+  margin-top: 20%;
 } 
+
+.description{
+  font-size: 20px;
+  font-weight: 300;
+}
 
 .overview .btn-lightblue {
   background-color: var(--blue-button);
@@ -61,11 +42,10 @@
   border: none;
   border-radius: 25px;
   margin-top: 20px;
-  margin-left: 150px;
   padding: 10px 10px;
   font-size: 18px;
   display: block;
-  width: 25% !important;
+  width: 35% !important;
   padding-left: 45px;
   padding-right: 45px;
 }
@@ -74,7 +54,9 @@
   background-color: var(--blue-button);
   transform: scale(1.05);
   color: white;
-} */
+} 
+
+
 
 /* popular destinations */
 
@@ -86,54 +68,37 @@
   display: inline-block;
 }
 
-/* popular destinations */
-
-.destination-card {
-  position: relative;
-  border-radius: 15px;
-  margin-bottom: 20px;
+.rating .bi-star-fill {
+  color: var(--stars);
 }
 
-.destination-card .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  right: 0;
-  padding: 20px;
-  color: white;
+.rating .bi-star {
+  color: var(--stars);
 }
 
-.destination-card .country {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
+.card-body {
+  font-size: 20px;
+  color:var(--dark-blue);
+  padding: 0;
 }
 
-.destination-card .btn-blue {
-  background-color: var(--blue-button);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 30px;
-  font-size: 14px;
-  display: block;
-  margin: 0 auto;
+.card-link {
+  display: block; 
+  width: 100%;
+  border-top: 1px dotted black; 
+  padding: 10px 0; 
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-size: 20px;
 }
-.destination-card .btn-blue:hover {
-  background-color: var(--blue-button);
-  transform: scale(1.05);
-  color: white;
-}
+
 
 /* paginator */
-/* paginator */
+
 .paginator {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .paginator > button {
@@ -141,36 +106,53 @@
   background-color: #fff;
   padding: 10px 20px;
   border: none;
-  /* margin: 20 20px;  */
 }
 
-.slick-dots {
-  display: flex !important; 
-  justify-content: center;
-  align-items: center; 
-  margin: 0 10px; 
-  list-style: none; 
-  padding: 0;
+
+/* about company */
+
+.about-section{
+  background-color: var(--background);
+  padding: 60px;
+
+  h2 {
+    padding-top: 1%;
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+  }
+
+  p {
+    padding-top: 5%;
+    color: white;
+    font-size: 18px;
+  }
+  
 }
 
-.slick-dots li {
-  margin: 0 5px; 
-}
-
-.slick-dots li button {
-  width: 10px;
-  height: 10px;
-  background-color: #ddd;
-  border-radius: 50%;
+.about-section .btn-white {
+  background-color: var(--white);
+  color: var(--background);
   border: none;
-  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 10px 10px;
+  font-size: 18px;
+  display: block;
+  width: 35% !important;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 5%;
+}
+
+.about-section .btn-white:hover {
+  background-color: var(--white);
+  transform: scale(1.05);
+  color: var(--background);
 }
 
 /* news */
 
-/* .news-image slick-slide {
-  width: 50% !important;
-} */
 
 /* contactform */
 
