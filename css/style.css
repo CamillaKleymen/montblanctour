@@ -33,7 +33,7 @@
 
 .description{
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .overview .btn-lightblue {
@@ -62,15 +62,16 @@
 
 .title {
   color: var(--dark-blue);
-  border-bottom: 2px solid black;
-  margin-top: 50px;
-  padding-bottom: 17px;
+  font-weight: bold;
+  font-size: 52px;
+  margin-top: 70px;
   display: inline-block;
 }
 
 .rating .bi-star-fill {
   color: var(--stars);
 }
+
 
 .rating .bi-star {
   color: var(--stars);
@@ -151,71 +152,100 @@
   color: var(--background);
 }
 
+
+/* our advantages */
+
+.photo-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.descript {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.advantages img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 /* news */
 
-
-/* contactform */
-
-.contactform {
-  background-image: url("../images/contactform.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 80px 0;
-  position: relative;
-  color: white;
+.news-description {
+  padding: 3%;
+  padding-top: 18%;
+  color:var(--dark-blue);
+  font-size: 18px;
 }
 
-.contactform::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+.news-item .read-more {
+  color: var(--dark-blue);
+  padding: 3%;
 }
 
-.contactform .container {
-  position: relative;
-  z-index: 1;
-}
+/* contact-form */
 
-.title-contacts {
-  color: white;
-  border-bottom: 2px solid white;
-  margin-top: 50px;
-  padding-bottom: 17px;
-  display: inline-block;
-}
 
-.contactform .form-control {
+
+.contactus .form-control {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   border-radius: 0;
-  color: white;
+  color: black;
   padding-left: 0;
+  padding-top: 20px;
 }
 
-.contactform .form-control:focus {
+.contactus .form-label {
+  color:var(--dark-blue);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.contactus .form-control:focus {
   color: var(--bs-body-color);
   background-color: transparent !important;
   border-color: #86b7fe;
   outline: 0;
 }
 
-.contactform .form-control::placeholder {
+.contactus .form-control::placeholder {
   background-color: transparent;
-  color: white;
+  color: black;
 }
 
-.contactform .btn-primary {
+.contactus .btn-lightblue {
   background-color: var(--blue-button);
+  color: white;
   border: none;
   border-radius: 25px;
-  padding: 10px 30px;
+  margin-top: 20px;
+  padding: 10px 10px;
   font-size: 18px;
+  display: block;
+  width: 35% !important;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.contactus .btn-lightblue:hover {
+  background-color: var(--blue-button);
+  transform: scale(1.05);
+  color: white;
+
 }
 
 
@@ -223,7 +253,6 @@
 /* footer */
 
 footer {
-  /* background-color: #042835; */
   color: var(--dark-blue);
   padding: 50px 0;
 }
@@ -245,8 +274,6 @@ footer ul li a {
   text-decoration: none;
 }
 .social-icon {
-  /* width: 50%;
-  height: 50%; */
   font-size: 20px;
   background-color: black;
   border-radius: 50%;
