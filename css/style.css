@@ -40,6 +40,9 @@
   color:var(--white);
 }
 
+.breadcrumb li:nth-child(4) {
+  color:var(--white);
+}
 
 /* == buttons row == */
 .tour-buttons {
@@ -80,6 +83,40 @@
   border-color: #264A99;
   color: white;
 }
+
+/* ==> egypt <== */
+
+
+.tour-info .btn-lightblue {
+  background-color: var(--blue-button);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 5%;
+  padding: 10px 10px;
+  font-size: 18px;
+  display: block;
+  width: 35% !important;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.tour-info .btn-link {
+  text-decoration: none;
+}
+
+.tour-info .btn-lightblue:hover {
+  background-color: var(--blue-button);
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+} 
+
+
+
+
+
 
 
 
