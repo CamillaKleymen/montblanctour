@@ -24,11 +24,13 @@
   font-size: 70px;
   font-weight: bold;
   margin-top: 20%;
+  padding-left: 5%;
 } 
 
 .description{
   font-size: 20px;
   font-weight: 400;
+  padding-left: 5%;
 }
 
 .overview .btn-lightblue {
@@ -37,6 +39,7 @@
   border: none;
   border-radius: 25px;
   margin-top: 20px;
+  margin-left: 5%;
   padding: 10px 10px;
   font-size: 18px;
   display: block;
@@ -45,16 +48,20 @@
   padding-right: 45px;
 }
 
+.overview .btn-link {
+  text-decoration: none;
+}
+
 .overview .btn-lightblue:hover {
   background-color: var(--blue-button);
   transform: scale(1.05);
   color: white;
+  text-decoration: none;
 } 
 
 
 
 /* popular destinations */
-
 .title {
   color: var(--dark-blue);
   font-weight: bold;
@@ -72,22 +79,44 @@
   color: var(--stars);
 }
 
+
+
+
+.card {
+  width: 10rem;
+  margin: 0 5px;
+  padding: 20px;
+  border-top-left-radius: 5%; 
+  border-top-right-radius: 5%;  
+}
+
+.card-img-top {
+  object-fit: cover; 
+  object-position: center; 
+  border-bottom-left-radius: 5%; 
+  border-bottom-right-radius: 5%;  
+}
+
 .card-body {
-  font-size: 20px;
-  color:var(--dark-blue);
-  padding: 0;
+  font-size: 16px;
+  color: var(--dark-blue);
+  padding: 10%;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .card-link {
   display: block; 
   width: 100%;
   border-top: 1px dotted black; 
-  padding: 10px 0; 
+  padding: 8px 0;
   text-decoration: none;
   color: var(--dark-blue);
-  font-size: 20px;
+  font-size: 16px;
 }
-
 
 /* paginator */
 
@@ -201,7 +230,13 @@
 }
 
 /* contact-form */
+.contactus {
+  padding-left: 5%;
+}
 
+.contactus h2{
+  padding-left: 5%;
+}
 
 
 .contactus .form-control {

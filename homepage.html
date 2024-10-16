@@ -75,7 +75,7 @@
 
     <!-- tours overview -->
     <section>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row mt-3 overview">
                 <div class="col-lg-6">
                     <h1 class="maintitle">Откройте новые <br>
@@ -83,7 +83,9 @@
                         с нами!</h1>
                     <p class="description">Mont Blanc Tur — это тур агентство, которое поможет Вам организовать
                         незабываемые путешествия по всему миру. </p>
-                    <button class="btn btn-lightblue">Обзор туров</button>
+                    <a href="tourslist.html" class="btn-link">
+                        <button class="btn btn-lightblue">Обзор туров</button>
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <img src="images/touroverview.png" class="img-fluid img-tour-overview" alt="">
@@ -101,10 +103,10 @@
                 <button class="next"><i class="bi bi-arrow-right-circle-fill fs-1"></i></button>
             </div>
             <div class="row justify-content-between">
-                <!-- Добавлено закрытие и открытие .popular-destinations -->
+                
                 <div class="popular-destinations" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
                     <!-- bali -->
-                    <div class="card" style="width: 20rem; margin: 0 10px;">
+                    <div class="card">
                         <img src="images/bali.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Бали</h5>
@@ -123,7 +125,7 @@
                         </div>
                     </div>
                     <!-- egypt -->
-                    <div class="card" style="width: 20rem; margin: 0 10px;">
+                    <div class="card">
                         <img src="images/egypt.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Египет</h5>
@@ -138,11 +140,11 @@
                             <p>От 5 000,000 UZS</p>
                         </div>
                         <div class="card-body">
-                            <a href="#" class="card-link">Узнать больше ></a>
+                            <a href="egypt.html" class="card-link">Узнать больше ></a>
                         </div>
                     </div>
                     <!-- turkey -->
-                    <div class="card" style="width: 20rem; margin: 0 10px;">
+                    <div class="card">
                         <img src="images/turkey.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Турция</h5>
@@ -161,7 +163,7 @@
                         </div>
                     </div>
                     <!-- dubai -->
-                    <div class="card" style="width: 20rem; margin: 0 10px;">
+                    <div class="card">
                         <img src="images/dubai.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Дубай</h5>
@@ -189,9 +191,9 @@
 
     <!-- about company -->
     <section>
-        <div class="container"> 
+        <div class="container-fluid">
             <div class="row mt-5 about-section">
-                <div class="col-lg-4 p-0"> 
+                <div class="col-lg-4 p-0">
                     <img src="images/aboutcompany.png" class="img-fluid w-100 h-100" alt="">
                 </div>
                 <div class="col-lg-8">
@@ -204,7 +206,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- our advantages -->
     <section class="section-advantages">
@@ -324,8 +326,8 @@
 
     <!-- contact form -->
 
-    <section>
-        <div class="container">
+    <section class="contactus">
+        <div class="container-fluid">
             <h2 class="title mt-5">Контакты</h2>
             <p class="description">Будем рады ответить на любые ваши вопросы</p>
             <div class="row mt-3 contactus">
