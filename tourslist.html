@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
+    <title>Список туров</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -71,16 +71,39 @@
         </nav>
     </header>
 
+    <!-- breadcrumbs sections -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Туры</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Европа</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
-   
+
+    <!-- button-links -->
+    <section class="tour-buttons">
+        <div class="container">
+            <div class="button-row">
+                <a href="tourslist.html" class="btn-tour active">Европа</a>
+                <a href="tourslist.html" class="btn-tour">Азия</a>
+                <a href="tourslist.html" class="btn-tour">Африка</a>
+            </div>
+        </div>
+    </section>
 
     <!-- europe -->
     <section>
         <div class="container">
-            <h2 class="title">Популярные туры</h2>
-            <div class="row justify-content-between">
+            <h2 class="title mt-3">Популярные туры</h2>
+            <div class="row  mt-5">
+                <div class="col-lg-3">
                     <!-- bali -->
-                    <div class="card">
+                    <div class="card w-100">
                         <img src="images/bali.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Бали</h5>
@@ -98,8 +121,10 @@
                             <a href="#" class="card-link">Узнать больше ></a>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-3">
                     <!-- egypt -->
-                    <div class="card">
+                    <div class="card w-100">
                         <img src="images/egypt.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Египет</h5>
@@ -117,8 +142,10 @@
                             <a href="egypt.html" class="card-link">Узнать больше ></a>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-3">
                     <!-- turkey -->
-                    <div class="card">
+                    <div class="card w-100">
                         <img src="images/turkey.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Турция</h5>
@@ -136,8 +163,10 @@
                             <a href="#" class="card-link">Узнать больше ></a>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-3">
                     <!-- dubai -->
-                    <div class="card">
+                    <div class="card w-100">
                         <img src="images/dubai.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Дубай</h5>
@@ -162,7 +191,7 @@
 
 
 
-    
+
     <footer>
         <div class="container">
             <div class="row">

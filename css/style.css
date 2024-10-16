@@ -6,6 +6,8 @@
   --stars: #ffa800;
   --background: #264A99;
   --white: white;
+  --breadcrumbs-background: #264A99;
+  --btn-darkblue: #264A99;
 }
 
 /* header */
@@ -15,8 +17,73 @@
   color: var(--dark-blue);
 }
 
-/* tours overview */
 
+/* tours list html => breadcrumbs  */
+.breadcrumbs {
+  background-color: var(--breadcrumbs-background); /* Насыщенный синий цвет фона */
+  padding: 15px 15px;
+}
+
+.breadcrumb-item {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.breadcrumb-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.breadcrumb li:nth-child(3) {
+  color:var(--white);
+}
+
+
+/* == buttons row == */
+.tour-buttons {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-tour {
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--btn-darkblue);
+  min-width: 120px;
+  text-align: center;
+}
+
+.btn-tour.active {
+  background-color: var(--btn-darkblue);
+  color: white;
+}
+
+.btn-tour:not(.active) {
+  background-color: white;
+  color: var(--btn-darkblue);
+}
+
+.btn-tour:hover {
+  background-color: var(--btn-darkblue);
+  border-color: #264A99;
+  color: white;
+}
+
+
+
+/* tours overview */
 .maintitle {
   margin-top: 2%;
   margin-bottom: 5%;
@@ -58,7 +125,6 @@
   color: white;
   text-decoration: none;
 } 
-
 
 
 /* popular destinations */
