@@ -17,11 +17,6 @@
 
 /* tours overview */
 
-.img-tour-overview{
-  width: 100%;
-  clip-path: polygon(0 0, 0 80%, 50% 100%, 100% 70%, 100% 0);
-}
-  
 .maintitle {
   margin-top: 2%;
   margin-bottom: 5%;
@@ -112,24 +107,33 @@
 
 /* about company */
 
-.about-section{
+.about-section {
   background-color: var(--background);
-  padding: 60px;
-
-  h2 {
-    padding-top: 1%;
-    color: white;
-    font-size: 58px;
-    font-weight: bold;
-  }
-
-  p {
-    padding-top: 5%;
-    color: white;
-    font-size: 18px;
-  }
-  
+  padding-right: 60px;
+  padding-left: 0;
 }
+
+.about-section h2 {
+  padding-top: 1%;
+  color: white;
+  font-size: 58px;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+.about-section p {
+  padding-top: 3%;
+  color: white;
+  font-size: 18px;
+  padding-left: 5%;
+}
+
+.about-section img {
+  width: 100%; 
+  margin-left: 0; 
+  margin-right: 0;
+}
+
 
 .about-section .btn-white {
   background-color: var(--white);
@@ -144,6 +148,7 @@
   padding-left: 45px;
   padding-right: 45px;
   margin-bottom: 5%;
+  margin-left: 5%;
 }
 
 .about-section .btn-white:hover {
