@@ -1,23 +1,24 @@
 $(document).ready(function() {
     // Инициализация слайдера для '.popular-destinations'
     $('.popular-destinations').slick({
-        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
         arrows: true,
-        prevArrow: $('.popular-destinations').siblings('.paginator').find('.prev'),
-        nextArrow: $('.popular-destinations').siblings('.paginator').find('.next'),
+        prevArrow: $('.paginator .prev'),
+        nextArrow: $('.paginator .next'),
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -27,24 +28,17 @@ $(document).ready(function() {
     });
 
     // Инициализация слайдера для '.news'
-    $('.news').slick({
-        infinite: true,
-        slidesToShow: 2,
+    $('.news-section .news').slick({
+        slidesToShow: 1.5,
         slidesToScroll: 1,
-        dots: false,
         arrows: true,
-        prevArrow: $('.news').siblings('.paginator').find('.prev'),
-        nextArrow: $('.news').siblings('.paginator').find('.next'),
+        dots: false,
+        infinite: true,
+        prevArrow: $('.news-section .paginator .prev'),
+        nextArrow: $('.news-section .paginator .next'),
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -53,23 +47,16 @@ $(document).ready(function() {
         ]
     });
 
-
+    // Инициализация мобильной версии '.mobnews'
     $('.mobnews').slick({
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,  // Для мобильной версии 1 слайд
         slidesToScroll: 1,
         dots: false,
         arrows: true,
         prevArrow: $('.mobnews').siblings('.paginator').find('.prev'),
         nextArrow: $('.mobnews').siblings('.paginator').find('.next'),
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
             {
                 breakpoint: 768,
                 settings: {
@@ -112,15 +99,5 @@ $(document).ready(function() {
                 }
             }
         ]
-    });
-
-    // Общая функция для управления кнопками слайдера
-    $('.paginator .prev, .paginator .next').on('click', function() {
-        var $slider = $(this).closest('.section').find('.slick-slider');
-        if ($(this).hasClass('prev')) {
-            $slider.slick('slickPrev');
-        } else {
-            $slider.slick('slickNext');
-        }
     });
 });

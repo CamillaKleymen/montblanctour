@@ -461,6 +461,11 @@ footer ul li a {
     padding-right: 15px;
   }
 
+
+  .img-tour-overview {
+    width: 100%;
+  }
+
   .overview .btn-lightblue {
     width: 70% !important;
     margin-left: 17%;
@@ -469,13 +474,50 @@ footer ul li a {
     padding-right: 20px;
   }
 
-  .about-section .btn-white {
-    width: 70% !important;
-    margin-left: 17%;
-    /* margin-right: 15px; */
-    padding-left: 20px;
-    padding-right: 20px;
+  .about-section {
+    background-color: var(--background);
   }
+
+  .about-section .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .about-section img {
+      width: 111% !important;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .about-section .about-content {
+      padding: 20px;
+  }
+
+  .about-section .title {
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 15px;
+  }
+
+  .about-section .description {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+
+  .about-section .btn-white {
+      background-color: var(--white);
+      color: var(--background);
+      border: none;
+      border-radius: 25px;
+      width: 70% !important;
+      margin-left: 17%;
+      /* margin-right: 15px; */
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
   
   .descript {
     left: 40%;
@@ -496,7 +538,7 @@ footer ul li a {
   }
 
   .title {
-    font-size: 36px;
+    font-size: 28px;
     margin-top: 40px;
   }
 
