@@ -2,17 +2,17 @@ $(document).ready(function() {
     // Инициализация слайдера для '.popular-destinations'
     $('.popular-destinations').slick({
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        prevArrow: $('.paginator .prev'),
-        nextArrow: $('.paginator .next'),
+        prevArrow: $('.popular-destinations').siblings('.paginator').find('.prev'),
+        nextArrow: $('.popular-destinations').siblings('.paginator').find('.next'),
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
@@ -53,39 +53,74 @@ $(document).ready(function() {
         ]
     });
 
-    // Управление кнопками слайдера
-    $('.paginator .prev').on('click', function() {
-        $(this).siblings('.popular-destinations, .news').slick('slickPrev');
-    });
-    $('.paginator .next').on('click', function() {
-        $(this).siblings('.popular-destinations, .news').slick('slickNext');
-    });
-});
 
-// Функция переключения выпадающего меню
-function toggleDropdown(event) {
-    event.preventDefault();
-    var dropdownMenu = this.nextElementSibling;
-    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-}
+    $('.mobnews').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: $('.mobnews').siblings('.paginator').find('.prev'),
+        nextArrow: $('.mobnews').siblings('.paginator').find('.next'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 
-// Закрытие выпадающих меню при клике вне их
-function closeDropdowns(event) {
-    if (!event.target.matches('.dropdown-toggle')) {
-        var dropdowns = document.getElementsByClassName("dropdown-menu");
-        for (var i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].style.display = "none";
+    // Инициализация слайдера для '.advantages-slider'
+    $('.advantages-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        prevArrow: '<button class="slick-prev">Previous</button>',
+        nextArrow: '<button class="slick-next">Next</button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    // Общая функция для управления кнопками слайдера
+    $('.paginator .prev, .paginator .next').on('click', function() {
+        var $slider = $(this).closest('.section').find('.slick-slider');
+        if ($(this).hasClass('prev')) {
+            $slider.slick('slickPrev');
+        } else {
+            $slider.slick('slickNext');
         }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Добавление обработчиков для выпадающих меню
-    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    dropdownToggles.forEach(function(toggle) {
-        toggle.addEventListener('click', toggleDropdown);
     });
-
-    // Закрытие выпадающего меню при клике вне его
-    window.addEventListener('click', closeDropdowns);
 });
