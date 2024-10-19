@@ -466,6 +466,10 @@ footer ul li a {
     width: 100%;
   }
 
+  .populartours .paginator {
+    display: none;
+  }
+
   .overview .btn-lightblue {
     width: 70% !important;
     margin-left: 17%;
