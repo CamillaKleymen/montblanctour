@@ -461,6 +461,10 @@ footer ul li a {
     padding-right: 15px;
   }
 
+  .dropdown-menu.show {
+    /* display: block; */
+    width: 10% !important ;
+  }
 
   .img-tour-overview {
     width: 100%;
