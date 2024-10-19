@@ -31,8 +31,9 @@
 }
 
 .bg-color {
-  color: var(--background)
+  background-color: var(--background);
 }
+
 /* header */
 .nav-item > a {
   font-size: 20px;
@@ -86,13 +87,14 @@
 
 
 /* popular destinations */
-/* .title {
-  color: var(--dark-blue);
-  font-weight: bold;
+.title {
+  /* color: var(--dark-blue);
+  font-weight: bold; */
   font-size: 52px;
-  margin-top: 70px;
-  display: inline-block;
-} */
+  /* margin-top: 70px;
+  display: inline-block; */
+} 
+/* 
 
  .bi-star-fill {
   color: var(--stars);
@@ -135,12 +137,12 @@
 .card-link {
   /* display: block;  */
   /* width: 100%; */
-  border-top: 1px dotted black; 
+  /* border-top: 1px dotted black;  */
   /* padding: 8px 0; */
   /* text-decoration: none; */
   /* color: var(--dark-blue); */
-  font-size: 16px;
-}
+  /* font-size: 16px; */
+/* } */
 
 /* paginator */
 
@@ -250,19 +252,19 @@
   font-size: 18px;
 }
 
-.news-item .read-more {
+/* .news-item .read-more {
   color: var(--dark-blue);
   padding: 3%;
-}
+} */
 
 /* contact-form */
-.contactus {
+/* .contactus {
   padding-left: 5%;
 }
 
 .contactus h2{
   padding-left: 5%;
-}
+} */
 
 
 .contactus .form-control {
