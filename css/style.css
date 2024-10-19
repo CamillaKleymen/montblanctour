@@ -8,8 +8,31 @@
   --white: white;
   --breadcrumbs-background: #264A99;
   --btn-darkblue: #264A99;
+  --text-blue:#143882;
+  --links-color:#042835;
+  --text-white: white;
+
 }
 
+.text-corp {
+  color: var(--links-color);
+}
+
+.text-blue {
+ color: var(--text-blue);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.dark-text {
+  color:var(--dark-blue);
+}
+
+.bg-color {
+  color: var(--background)
+}
 /* header */
 .nav-item > a {
   font-size: 20px;
@@ -20,19 +43,19 @@
 
 /* tours overview */
 .maintitle {
-  margin-top: 2%;
+  /* margin-top: 2%;
   margin-bottom: 5%;
-  color: var(--dark-blue);
+  color: var(--dark-blue); */
   font-size: 70px;
-  font-weight: bold;
+  /* font-weight: bold;
   margin-top: 20%;
-  padding-left: 5%;
+  padding-left: 5%; */
 } 
 
 .description{
   font-size: 20px;
-  font-weight: 400;
-  padding-left: 5%;
+  /* font-weight: 400;
+  padding-left: 5%; */
 }
 
 .overview .btn-lightblue {
@@ -50,9 +73,9 @@
   padding-right: 45px;
 }
 
-.overview .btn-link {
+/* .overview .btn-link {
   text-decoration: none;
-}
+} */
 
 .overview .btn-lightblue:hover {
   background-color: var(--blue-button);
@@ -63,20 +86,20 @@
 
 
 /* popular destinations */
-.title {
+/* .title {
   color: var(--dark-blue);
   font-weight: bold;
   font-size: 52px;
   margin-top: 70px;
   display: inline-block;
-}
+} */
 
-.rating .bi-star-fill {
+ .bi-star-fill {
   color: var(--stars);
 }
 
 
-.rating .bi-star {
+ .bi-star {
   color: var(--stars);
 }
 
@@ -110,22 +133,22 @@
 }
 
 .card-link {
-  display: block; 
-  width: 100%;
+  /* display: block;  */
+  /* width: 100%; */
   border-top: 1px dotted black; 
-  padding: 8px 0;
-  text-decoration: none;
-  color: var(--dark-blue);
+  /* padding: 8px 0; */
+  /* text-decoration: none; */
+  /* color: var(--dark-blue); */
   font-size: 16px;
 }
 
 /* paginator */
 
-.paginator {
+/* .paginator {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
-}
+} */
 
 .paginator > button {
   color: var(--blue-button);
@@ -137,11 +160,11 @@
 
 /* about company */
 
-.about-section {
+/* .about-section {
   background-color: var(--background);
   padding-right: 60px;
   padding-left: 0;
-}
+} */
 
 .about-section h2 {
   padding-top: 1%;
@@ -152,36 +175,38 @@
 }
 
 .about-section p {
-  padding-top: 3%;
-  color: white;
+  /* padding-top: 3%;
+  color: white; */
   font-size: 18px;
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 
-.about-section img {
+/* .about-section img {
   width: 100%; 
   margin-left: 0; 
   margin-right: 0;
-}
+} */
 
 
-.about-section .btn-white {
-  background-color: var(--white);
-  color: var(--background);
-  border: none;
-  border-radius: 25px;
-  margin-top: 40px;
-  padding: 10px 10px;
+/* кнопка бтн лайт + текст корп через  */
+
+.about-section .btn-light {
+  /* background-color: var(--white); */
+  /* color: var(--background); */
+  /* border: none; */
+  /* border-radius: 25px; */
+  /* margin-top: 40px;
+  padding: 10px 10px; */
   font-size: 18px;
-  display: block;
-  width: 22% !important;
+  /* display: block; */
+  width: 24% !important;
   padding-left: 45px;
   padding-right: 45px;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   margin-left: 5%;
 }
 
-.about-section .btn-white:hover {
+.about-section .btn-light:hover {
   background-color: var(--white);
   transform: scale(1.05);
   color: var(--background);
@@ -308,7 +333,7 @@
 }
 
 
-.breadcrumb li:nth-child(3) {
+/* .breadcrumb li:nth-child(3) {
   color:var(--white);
 }
 
@@ -318,7 +343,7 @@
 
 .breadcrumb li:nth-child(2) {
   color:var(--white);
-}
+} */
 
 /* == buttons row == */
 .tour-buttons {
@@ -391,50 +416,51 @@
 
 
 /*  => contacts <=  */
-
+/* 
 .contact-form-col {
   padding: 50px;
-}
+} */
 
-.contact-image-col {
+/* .contact-image-col {
   position: relative;
   overflow: hidden;
-}
+} */
 
 
-.contact-image-wrapper img {
+/* .contact-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 
 
 
 /* footer */
 
-footer {
+/* footer {
   color: var(--dark-blue);
   padding: 50px 0;
 }
 footer h5 {
   color: var(--dark-blue);
   margin-bottom: 20px;
-}
-footer ul {
+} */
+/* footer ul {
   list-style-type: none;
   padding-left: 0;
   color: var(--dark-blue);
-}
-footer ul li {
+} */
+/* footer ul li {
   margin-bottom: 10px;
   color: var(--dark-blue);
-}
-footer ul li a {
+} */
+/* footer ul li a {
   color: var(--dark-blue);
   text-decoration: none;
-}
-.social-icon {
+} */
+
+/* .social-icon {
   font-size: 20px;
   background-color: black;
   border-radius: 50%;
@@ -442,7 +468,7 @@ footer ul li a {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-}
+} */
 
 /* media */
 
@@ -514,14 +540,13 @@ footer ul li a {
       margin-bottom: 20px;
   }
 
-  .about-section .btn-white {
-      background-color: var(--white);
+  .about-section .btn-light {
+      /* background-color: var(--white);
       color: var(--background);
       border: none;
-      border-radius: 25px;
+      border-radius: 25px; */
       width: 70% !important;
       margin-left: 17%;
-      /* margin-right: 15px; */
       padding-left: 20px;
       padding-right: 20px;
   }
