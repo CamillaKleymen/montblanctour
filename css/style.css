@@ -34,6 +34,10 @@
   background-color: var(--background);
 }
 
+.bg-button-color {
+  background-color: var(--blue-button)!important;
+}
+
 /* header */
 .nav-item > a {
   font-size: 20px;
@@ -59,8 +63,8 @@
   padding-left: 5%; */
 }
 
-.overview .btn-lightblue {
-  background-color: var(--blue-button);
+/* .btn-primary {
+  background-color: var(--blue-button)!important;
   color: white;
   border: none;
   border-radius: 25px;
@@ -72,14 +76,14 @@
   width: 35% !important;
   padding-left: 45px;
   padding-right: 45px;
-}
+} */
 
 /* .overview .btn-link {
   text-decoration: none;
 } */
 
-.overview .btn-lightblue:hover {
-  background-color: var(--blue-button);
+.btn-primary:hover {
+  background-color: var(--blue-button)!important;
   transform: scale(1.05);
   color: white;
   text-decoration: none;
@@ -94,20 +98,20 @@
   /* margin-top: 70px;
   display: inline-block; */
 } 
-/* 
 
- .bi-star-fill {
+
+.bi-star-fill {
   color: var(--stars);
 }
 
 
- .bi-star {
+.bi-star {
   color: var(--stars);
 }
 
 
 
-
+/*  
 .card {
   width: 10rem;
   margin: 0 5px;
@@ -191,8 +195,7 @@
 
 
 /* кнопка бтн лайт + текст корп через  */
-
-.about-section .btn-light {
+.btn-light {
   /* background-color: var(--white); */
   /* color: var(--background); */
   /* border: none; */
@@ -208,7 +211,7 @@
   margin-left: 5%;
 }
 
-.about-section .btn-light:hover {
+.btn-light:hover {
   background-color: var(--white);
   transform: scale(1.05);
   color: var(--background);
@@ -295,8 +298,8 @@
   color: black;
 }
 
-.contactus .btn-lightblue {
-  background-color: var(--blue-button);
+/* .btn-primary {
+  background-color: var(--blue-button)!important;
   color: white;
   border: none;
   border-radius: 25px;
@@ -309,12 +312,12 @@
   padding-right: 45px;
 }
 
-.contactus .btn-lightblue:hover {
+.btn-primary:hover {
   background-color: var(--blue-button);
   transform: scale(1.05);
   color: white;
 
-}
+} */
 
 
 /* tours list html => breadcrumbs  */
