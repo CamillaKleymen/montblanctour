@@ -27,7 +27,7 @@
 }
 
 .dark-text {
-  color:var(--dark-blue);
+  color:var(--dark-blue)!important;
 }
 
 .bg-color {
@@ -40,6 +40,11 @@
 
 .bg-btn-dark {
   background-color: var( --btn-darkblue)!important;
+}
+
+
+.bg-btn-white {
+  background-color:white !important;
 }
 
 /* header */
