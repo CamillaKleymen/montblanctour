@@ -25,19 +25,19 @@
 
     <!-- header -->
     <header>
-        <nav class="navbar d-flex navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand ms-0" href="#">
-                    <img src="images/logo.svg" class="img-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid pe-0">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" class="img-fluid" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end align-items-end px-5 me-5"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex justify-content-end align-items-end me-0 mb-2 mb-lg-0">
-                        <li class="nav-item px-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="#">Главная</a>
                         </li>
                         <li class="nav-item px-3">
@@ -52,7 +52,7 @@
                         <li class="nav-item px-3">
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
-                        <li class="nav-item dropdown px-2">
+                        <li class="nav-item dropdown px-3">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 RU
@@ -60,9 +60,6 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">EN</a></li>
                                 <li><a class="dropdown-item" href="#">UZ</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -71,9 +68,10 @@
         </nav>
     </header>
 
+
     <!-- breadcrumbs sections -->
     <section class="breadcrumbs">
-        <div class="container">
+        <div class="container-fluid pe-0">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-white"><a href="#">Главная</a></li>
@@ -86,7 +84,7 @@
     </section>
 
     <!-- egypt -->
-    <section>
+    <section class="d-none d-md-block">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-6">
@@ -139,8 +137,58 @@
     </section>
 
 
+    <!-- mobile version -->
+     <!-- egypt -->
+     <section class="d-md-none">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="popular-destinations">
+                        <div class="main-image mb-3">
+                            <img src="images/egypt/main.png" class="img-fluid rounded">
+                        </div>
+                        <div class="main-image mb-3">
+                            <img src="images/egypt/main.png" class="img-fluid rounded">
+                        </div>
+                        <div class="main-image mb-3">
+                            <img src="images/egypt/main.png" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tour-info text-center">
+                        <!-- <div class="d-flex align-items-center mb-5">
+                            <h2 class="maintitle ps-0 dark-text fw-bold">Египет</h2>
+                            <h3 class="fs-1 pe-0 mb-0 ms-auto dark-text fw-bold">100 $</h3>
+                        </div> -->
+                        <p class="description mb-5 mt-4">
+                            Шарм-эль-Шейх - популярный курортный город в Египте, который славится своей красотой,
+                            песчаными пляжами, чистой морской водой и бурной ночной жизнью. Главные
+                            достопримечательности города - это коралловые рифы, которые поражают своей удивительной
+                            красотой и привлекают туристов со всего света.
+                        </p>
+                        <p>✈️ Ташкент → Египет <br>
+                            📅 10.01 на 🌙 6+1 ночей <br>
+                            🌴 Merusaka Nusa Dua 5* <br>
+                            🛌 Deluxe / 2Adl <br>
+                            🍽 BB <br>
+                            🔥 2 850 USD
+                        </p>
+                        <a href="tourslist.html"
+                            class="btn btn-primary bg-button-color text-white border-rounded rounded-5 mx-5 mx-auto pb-2 mt-5 d-block w-50 px-5">Обзор
+                            туров</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- similar tours  -->
-    <section>
+    <section class="d-none d-md-block">
         <div class="container">
             <h2 class="title dark-text fw-bold mt-4 ps-2 d-inline-block mt-5">Похожие туры</h2>
             <div class="row mt-3 mb-5 gx-4 gy-4">
@@ -232,6 +280,91 @@
         </div>
     </section>
 
+
+    <!-- mobile version  -->
+      <!-- popular tours -->
+      <section class="populartours d-md-none">
+        <div class="container">
+            <h2 class="title dark-text ms-5 ps-5 fw-bold mt-5 d-inline-block p-0">Похожие туры</h2>
+            <div class="popular-destinations">
+
+                <!-- bali -->
+                <div class="card">
+                    <img src="images/bali.png" class="card-img-top" alt="Бали">
+                    <div class="card-body">
+                        <h5 class="card-title">Бали</h5>
+                        <!-- Corrected semantic inline list -->
+                        <ul class="list-inline fs-5">
+                            <li class="list-inline-item"><i class="bi bi-star-fill "></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill "></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill "></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill "></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star"></i></li>
+                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>От 5 000,000 UZS</p>
+                        <a href="#" class="card-link d-block w-100 text-corp text-decoration-none ps-1">Узнать больше
+                            ></a>
+                    </div>
+                </div>
+
+                <!-- egypt -->
+                <div class="card">
+                    <img src="images/egypt.png" class="card-img-top" alt="Египет">
+                    <div class="card-body">
+                        <h5 class="card-title">Египет</h5>
+                        <ul class="list-inline fs-5">
+                            <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star"></i></li>
+                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>От 5 000,000 UZS</p>
+                        <a href="egypt.html" class="card-link d-block w-100 text-corp text-decoration-none ps-1">Узнать
+                            больше ></a>
+                    </div>
+                </div>
+                <!-- turkey -->
+                <div class="card">
+                    <img src="images/turkey.png" class="card-img-top" alt="Турция">
+                    <div class="card-body">
+                        <h5 class="card-title">Турция</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star fs-5"></i></li>
+                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>От 5 000,000 UZS</p>
+                        <a href="#" class="card-link d-block w-100 text-corp text-decoration-none ps-1">Узнать больше
+                            ></a>
+                    </div>
+                </div>
+                <!-- dubai -->
+                <div class="card">
+                    <img src="images/dubai.png" class="card-img-top" alt="Дубай">
+                    <div class="card-body">
+                        <h5 class="card-title">Дубай</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star-fill fs-5"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-star fs-5"></i></li>
+                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>От 5 000,000 UZS</p>
+                        <a href="#" class="card-link d-block w-100 text-corp text-decoration-none ps-1">Узнать больше
+                            ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -238,7 +238,10 @@
 .descript {
   position: absolute;
   top: 85%;
-  left: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* left: 50%; */
   transform: translate(-50%, -50%); 
   color: white;
   font-size: 28px;
@@ -381,6 +384,32 @@
   border: 2px solid var(--btn-darkblue);
   min-width: 120px;
   text-align: center;
+}
+
+
+
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color:#143882;
+
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 16px !important;
+  line-height: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: var( --text-blue) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* .btn-tour.active {
@@ -566,6 +595,9 @@ footer h5 {
   }
   
   
+
+
+
   .descript {
     left: 40%;
   }

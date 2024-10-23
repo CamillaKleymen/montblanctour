@@ -72,7 +72,7 @@
     </header>
 
     <!-- breadcrumbs sections -->
-    <section class="breadcrumbs">
+    <section class="breadcrumbs d-none d-md-block">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -84,7 +84,7 @@
     </section>
 
     <!-- about company -->
-    <section class="d-none about-section d-md-block bg-color pe-4 p-0">
+    <section class="d-none d-md-block about-section d-md-block bg-color pe-4 p-0">
         <div class="container-fluid ps-0 ms-0">
             <div class="row mt-0">
                 <div class="col-lg-4">
@@ -106,44 +106,68 @@
 
 
 
+    <!-- mobile version -->
+    <!-- z-index => z-1, z-2  -->
+    <!-- about company -->
+    <section class="d-md-none about-section d-md-block bg-color pe-4 p-0">
+        <div class="container-fluid ps-0 ms-0 position-relative">
+            <div class="row mt-0">
+                <img src="images/image.png" class="img-fluid w-100 h-100 mx-0 z-1 position-relative" alt="О компании">
+
+                <!-- Text overlay container -->
+                <div class="position-absolute text-center top-50 start-0 translate-middle-y text-white ps-3 z-2">
+                    <h2 class="fw-bold fs-1 mb-2">О компании</h2>
+                    <p class="mb-4">Mont Blanc Tur — это тур агентство, которое поможет Вам
+                        организовать незабываемые путешествия по
+                        всему миру. Мы предлагаем широкий выбор туров для всех категорий путешественников — от
+                        романтических поездок для двоих до семейного отдыха с детьми.</p>
+                    <a href="tourslist.html" class="btn btn-light text-blue rounded-pill px-5 ms-5 p-2">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- Our Advantages Section -->
     <section class="section-advantages">
         <div class="container">
             <h2 class="title dark-text fw-bold mt-4 d-inline-block">Наши преимущества</h2>
 
             <!-- Slick Slider Wrapper for mobile -->
-            <div class="advantages-slider d-md-none">
+            <div class="d-md-none">
                 <div class="photo-text text-center">
                     <img src="images/advantages/experience.png" class="services img-fluid">
-                    <p class="descript">Опыт</p>
+                    <p class="descript px-5 mx-5 px-5 mx-5">Опыт</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/fast.png" class="services img-fluid">
-                    <p class="descript">Оперативность</p>
+                    <p class="descript px-5 mx-5">Оперативность</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/security.png" class="services img-fluid">
-                    <p class="descript">Безопасность</p>
+                    <p class="descript px-5 mx-5">Безопасность</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/timeeconomy.png" class="services img-fluid">
-                    <p class="descript">Экономия времени</p>
+                    <p class="descript px-5 mx-5">Экономия времени</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/support.png" class="services img-fluid">
-                    <p class="descript">Поддержка</p>
+                    <p class="descript px-5 mx-5">Поддержка</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/guarantee.png" class="services img-fluid">
-                    <p class="descript">Гарантии</p>
+                    <p class="descript px-5 mx-5">Гарантии</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/comfort.png" class="services img-fluid">
-                    <p class="descript">Удобство</p>
+                    <p class="descript px-5 mx-5">Удобство</p>
                 </div>
                 <div class="photo-text text-center">
                     <img src="images/advantages/responsibility.png" class="services img-fluid">
-                    <p class="descript">Ответственность</p>
+                    <p class="descript px-5 mx-5">Ответственность</p>
                 </div>
             </div>
 
@@ -151,35 +175,35 @@
             <div class="row mt-5 d-none d-md-flex">
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/experience.png" class="services img-fluid h-100">
-                    <p class="descript">Опыт</p>
+                    <p class="descript px-5 mx-5">Опыт</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/fast.png" class="services img-fluid h-100">
-                    <p class="descript">Оперативность</p>
+                    <p class="descript px-5 mx-5">Оперативность</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/security.png" class="services img-fluid h-100">
-                    <p class="descript">Безопасность</p>
+                    <p class="descript px-5 mx-5">Безопасность</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/timeeconomy.png" class="services img-fluid h-100">
-                    <p class="descript">Экономия времени</p>
+                    <p class="descript px-5 mx-5">Экономия времени</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/support.png" class="services img-fluid h-100">
-                    <p class="descript">Поддержка</p>
+                    <p class="descript px-5 mx-5">Поддержка</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/guarantee.png" class="services img-fluid h-100">
-                    <p class="descript">Гарантии</p>
+                    <p class="descript px-5 mx-5">Гарантии</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/comfort.png" class="services img-fluid h-100">
-                    <p class="descript">Удобство</p>
+                    <p class="descript px-5 mx-5">Удобство</p>
                 </div>
                 <div class="col-lg-3 photo-text">
                     <img src="images/advantages/responsibility.png" class="services img-fluid h-100">
-                    <p class="descript">Ответственность</p>
+                    <p class="descript px-5 mx-5">Ответственность</p>
                 </div>
             </div>
         </div>
