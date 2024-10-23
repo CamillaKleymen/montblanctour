@@ -25,19 +25,19 @@
 
     <!-- header -->
     <header>
-        <nav class="navbar d-flex navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand ms-0" href="#">
-                    <img src="images/logo.svg" class="img-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" class="img-fluid" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end align-items-end px-5 me-5"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex justify-content-end align-items-end me-0 mb-2 mb-lg-0">
-                        <li class="nav-item px-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="#">Главная</a>
                         </li>
                         <li class="nav-item px-3">
@@ -52,7 +52,7 @@
                         <li class="nav-item px-3">
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
-                        <li class="nav-item dropdown px-2">
+                        <li class="nav-item dropdown px-3">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 RU
@@ -60,9 +60,6 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">EN</a></li>
                                 <li><a class="dropdown-item" href="#">UZ</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -72,7 +69,7 @@
     </header>
 
     <!-- breadcrumbs sections -->
-    <section class="breadcrumbs">
+    <section class="breadcrumbs d-none d-md-block">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -113,6 +110,37 @@
                 </div>
                 <div class="col-lg-6">
                     <img src="images/contactus.png" class="img-fluid w-100 h-100" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- mobile version contact  -->
+      <section class="contactus d-md-none">
+        <div class="container-fluid text-center">
+            <h2 class="title dark-text fw-bold mt-4 ps-2 d-inline-block mt-5">Контакты</h2>
+            <p class="description">Будем рады ответить на любые ваши вопросы</p>
+            <div class="row mt-3">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3 mt-5">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" id="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Почта</label>
+                            <input type="email" id="email" class="form-control" placeholder="Ваша почта">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea id="message" class="form-control" rows="3"
+                                placeholder="Напишите Ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary bg-button-color text-white border-rounded rounded-5  mt-5 me-5 ms-5 pt-2 pb-2 w-50 mx-auto">
+                            Отправить
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
