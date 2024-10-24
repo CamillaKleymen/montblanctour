@@ -47,6 +47,11 @@
   background-color:white !important;
 }
 
+.bg-breadcrumbs {
+  background-color: var(--breadcrumbs-background);
+}
+
+
 /* header */
 .nav-item > a {
   font-size: 20px;
@@ -66,7 +71,8 @@
   padding-left: 5%; */
 } 
 
-.description{
+p {
+
   font-size: 20px;
   /* font-weight: 400;
   padding-left: 5%; */
@@ -100,10 +106,10 @@
 
 
 /* popular destinations */
-.title {
+h2 {
   /* color: var(--dark-blue);
   font-weight: bold; */
-  font-size: 52px;
+  font-size: 64px!important;
   /* margin-top: 70px;
   display: inline-block; */
 } 
@@ -229,19 +235,17 @@
 
 /* our advantages */
 
-.photo-text {
+/* .photo-text {
   position: relative;
-  text-align: center;
+  text-align: center !important;
   margin-bottom: 30px;
-}
-
+} 
 .descript {
   position: absolute;
   top: 85%;
   display: flex;
-  text-align: center;
+  text-align: center !important;
   justify-content: center;
-  /* left: 50%; */
   transform: translate(-50%, -50%); 
   color: white;
   font-size: 28px;
@@ -254,18 +258,18 @@
   width: 100%;
   height: auto;
 }
-
+ */
 
 
 
 /* news */
 
-.news-description {
+/* .news-description {
   padding: 3%;
   padding-top: 18%;
   color:var(--dark-blue);
   font-size: 18px;
-}
+} */
 
 /* .news-item .read-more {
   color: var(--dark-blue);
@@ -333,10 +337,10 @@
 
 
 /* tours list html => breadcrumbs  */
-.breadcrumbs {
-  background-color: var(--breadcrumbs-background); /* Насыщенный синий цвет фона */
+/* .breadcrumb {
+  background-color: var(--breadcrumbs-background);
   padding: 15px 15px;
-}
+} */
 
 .breadcrumb-item {
   padding-top: 5px;
@@ -524,7 +528,7 @@ footer h5 {
     margin-top: 10%;
   }
   
-  .description {
+  .p {
     font-size: 16px;
     padding-left: 15px;
     padding-right: 15px;
@@ -539,7 +543,7 @@ footer h5 {
     width: 100%;
   }
 
-  .populartours .paginator {
+  .popular-tours .paginator {
     display: none;
   }
 
@@ -570,18 +574,18 @@ footer h5 {
       padding: 20px;
   }
 
-  .about-section .title {
+  /* .about-section .title {
       color: white;
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 15px;
-  }
-
+  } */
+/* 
   .about-section .description {
       color: white;
       font-size: 16px;
       margin-bottom: 20px;
-  }
+  } */
 
   .about-section .btn-light {
       /* background-color: var(--white);
@@ -616,10 +620,10 @@ footer h5 {
     margin: 0 0 20px 0;
   }
 
-  .title {
+  /* .title {
     font-size: 28px;
     margin-top: 40px;
-  }
+  } */
 
   .contactus h2 {
     padding-left: 15px;
